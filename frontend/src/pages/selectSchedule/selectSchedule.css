@@ -1,0 +1,100 @@
+/* .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.613);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+}
+
+.container-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-container {
+  width: 80%;
+  height: 80vh;
+  background-color: antiquewhite;
+}
+
+.schedule-wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 20px 10px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: lightgray;
+  cursor: pointer;
+} */
+
+.container-wrapper {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+.date {
+  border: 1px solid black;
+  padding: 20px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.selectedDate {
+  border: 2px solid pink;
+  /* background-color: antiquewhite; */
+}
+
+.locations {
+  display: flex;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+.schedules {
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+
+.cinema {
+  margin-bottom: 20px;
+}
+
+.cinemaName {
+  color: #636363;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.time {
+  display: inline;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
