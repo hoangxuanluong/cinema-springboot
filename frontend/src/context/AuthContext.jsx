@@ -57,6 +57,7 @@ export const AuthContextProvider = ({ children }) => {
   }, [state.user])
 
   const jwtToken = 'Bearer ' + state.user?.access_token
+  console.log(jwtToken)
   axios.interceptors.request.use((config) => {
     console.log('intercepting and adding a token')
     config.headers.Authorization = jwtToken

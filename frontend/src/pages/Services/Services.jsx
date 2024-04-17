@@ -68,7 +68,6 @@ const Services = () => {
     console.log(itemIndex)
 
     if (itemIndex !== -1) {
-      // Nếu mặt hàng đã có trong giỏ hàng, cập nhật số lượng
       const updatedCart = [...cart]
       updatedCart[itemIndex].quantity += quantity
       setCart(updatedCart)

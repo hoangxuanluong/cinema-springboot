@@ -12,6 +12,7 @@ import React, { useContext } from 'react'
 import SelectTicket from './pages/selectTicket/SelectTicket'
 import Services from './pages/Services/Services'
 import Payment from './pages/payment/Payment'
+import FilmDetail from './pages/FilmDetail/FilmDetail'
 
 function App() {
   const { user } = useContext(AuthContext)
@@ -29,6 +30,7 @@ function App() {
         <Route path='/schedules/:id/tickets' element={<SelectTicket />} />
         <Route path='/services' element={<Services />} />
         <Route path='/payment' element={<Payment />} />
+        <Route path='/films/:id' element={<FilmDetail />} />
       </Routes>
     </BrowserRouter>
   )

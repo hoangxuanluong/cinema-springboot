@@ -32,7 +32,8 @@ public class HoaDonDoiServiceImpl implements HoaDonDoiService {
     @Override
     public HoaDonDoi saveHoaDonDoi(HoaDonDoi hoaDonDoi) {
         hoaDonDoi.setDate(LocalDate.now());
-        ThanhVien thanhVien = thanhVienRepository.findById(hoaDonDoi.getThanhVien().getId()).get();
+        System.out.println(hoaDonDoi);
+        ThanhVien thanhVien = thanhVienRepository.findByEmail(hoaDonDoi.getThanhVien().getEmail()).get();
         hoaDonDoi.setThanhVien(thanhVien);
         List<ChiTietDoi> chiTietDoiRequests = hoaDonDoi.getChiTietDois();
         List<ChiTietDoi> chiTietDois = new ArrayList<>();

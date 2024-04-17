@@ -8,7 +8,7 @@ const Film = ({ item }) => {
     <div
       className='gigCard'
       style={{
-        height: '420px',
+        height: '470px',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
@@ -35,17 +35,22 @@ const Film = ({ item }) => {
           </div>
         </div>
       </div>
-      <Link to={`/films/${item.id}/schedules`}>
-        <div className='botFilmInfo'>
-          <div className='detail'>
-            <div className='price'>
+      <div className='botFilmInfo'>
+        <div className='detail'>
+          <div className='price' style={{ gap: '20px', display: 'flex' }}>
+            <Link to={`/films/${item.id}`}>
+              <span style={{ border: '1px solid black', padding: '5px' }}>
+                VIEW DETAILS
+              </span>
+            </Link>
+            <Link to={`/films/${item.id}/schedules`}>
               <span style={{ border: '1px solid black', padding: '5px' }}>
                 BOOK TICKET
               </span>
-            </div>
+            </Link>
           </div>
         </div>
-      </Link>
+      </div>
     </div>
     // </Link>
   )
